@@ -1,0 +1,8 @@
+*.exe
+*.zip
+*.dpapi
+*.sqlite3*
+data/
+*.key
+*.pem
+__pycache__/
