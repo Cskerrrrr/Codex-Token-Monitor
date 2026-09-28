@@ -9,7 +9,7 @@ Windows 上的 Codex 用量统计与悬浮额度球。
 也可下载 `CodexTokenMonitor-portable.zip`，完整解压后运行其中的 EXE。支持 Windows 10 / 11 x64。
 
 1. 使用本机 Codex 的 ChatGPT 登录状态；需要切换账号时，在统计页点击“切换 ChatGPT 账号”。这也会切换本机 Codex 使用的账号。
-2. 悬浮球显示总 Token 估算、当前周使用 Token、满额费用估算和已用额度。外圈从 0% 增长至 100%；满圈表示额度用完。
+2. 悬浮球显示总 Token 估算、当前周使用 Token、预计总费用和已用额度。外圈从 0% 增长至 100%；满圈表示额度用完。
 3. 托盘菜单可打开详细统计、设置开机启动、检查新版本及退出。
 
 ## 统计与费用
@@ -20,6 +20,7 @@ Windows 上的 Codex 用量统计与悬浮额度球。
 - 输入 Token 已包含缓存读取，输出 Token 已包含推理 Token，两者不再次加入 Token 总数。
 - 费用为 API 等价估算，**不是 ChatGPT 订阅实际账单**。日志没有提供的服务档位、工具或多模态计费单位，无法准确还原。
 - 额度推算基于已有用量与账号消耗比例，属于估算值；刚重置或样本较少时会有较大波动。
+- v1.0.4 起，“预计总费用”采用 [Sub2API 的 7 天窗口算法](https://github.com/Wei-Shaw/sub2api/blob/9a62841fd124d026cf3694fcf9b79e98addcdbdc/frontend/src/components/account/AccountUsageCell.vue#L812)：本次重置后账号累计费用 × 100 ÷ 每周已用百分比。使用未舍入费用计算，包含缓存费用；费用或百分比为 0 时显示 `—`。页面和悬浮球使用同一计算口径，新增记录即时累计。
 
 ## 版本更新
 
