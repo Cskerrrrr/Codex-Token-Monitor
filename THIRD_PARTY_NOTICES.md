@@ -7,7 +7,7 @@
 | Python | 3.12.14 | [PSF 许可及源码](https://www.python.org/downloads/release/python-31214/) |
 | Qt | 6.10.3 | LGPL-3.0；[完整源码](https://download.qt.io/archive/qt/6.10/6.10.3/single/) |
 | PySide6 / Shiboken6 | 6.10.3 | LGPL-3.0；[对应源码](https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.10.3-src/) |
-| Cryptography | 47.0.0 | Apache-2.0 / BSD-3-Clause；[源码](https://github.com/pyca/cryptography/tree/47.0.0) |
+| Cryptography | 50.0.1 | Apache-2.0 / BSD-3-Clause；[源码](https://github.com/pyca/cryptography/tree/50.0.1) |
 | CFFI | 2.1.1 | MIT；[源码](https://github.com/python-cffi/cffi/tree/v2.1.1) |
 | Zstandard | 0.25.0（Python 绑定） | BSD；[源码](https://github.com/indygreg/python-zstandard/tree/0.25.0) |
 
