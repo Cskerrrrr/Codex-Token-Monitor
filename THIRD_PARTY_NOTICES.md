@@ -18,3 +18,8 @@
 退出程序后，解压便携包。可将其中 PySide6、Shiboken6 对应目录中的 DLL / PYD 替换为自行编译、同架构并保持二进制兼容的版本，再运行根目录的 `CodexTokenMonitor.exe`。组件路径保持原样；调试修改的组件时可以关闭自动更新。应用没有禁止这一操作，也未加入检测调试器后拒绝运行的限制。
 
 上表给出本次分发所用组件的对应源码位置，与安装包同时提供获取说明。各组件的版权声明和完整许可证随包保留。
+
+## Excel Codex Bridge
+
+Version 0.5.18, from https://github.com/Kaixxrua/excel-codex-bridge (Unlicense).
+The original Windows runtime archive is bundled with the application. Its LICENSE, UPSTREAM-LICENSE and included dependency notices are preserved in the component directory. It is an unofficial project and is not affiliated with or endorsed by OpenAI or Microsoft.
